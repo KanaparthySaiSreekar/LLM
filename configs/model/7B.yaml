@@ -1,0 +1,13 @@
+# 7B parameter model configuration (production)
+vocab_size: 32000
+n_layers: 32
+d_model: 4096
+n_heads: 32
+head_dim: 128
+ffn_mult: 3.5  # ~14336 FFN dim (following Llama)
+max_seq_len: 4096
+dropout: 0.0
+tie_embeddings: false
+rope_base: 10000.0
+n_kv_heads: 8  # GQA: 32 query heads, 8 KV heads
+initializer_range: 0.02

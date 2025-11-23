@@ -1,0 +1,13 @@
+# 1B parameter model configuration (production)
+vocab_size: 32000
+n_layers: 24
+d_model: 2048
+n_heads: 16
+head_dim: 128
+ffn_mult: 4.0
+max_seq_len: 2048
+dropout: 0.0
+tie_embeddings: false
+rope_base: 10000.0
+n_kv_heads: 4  # GQA: 16 query heads, 4 KV heads
+initializer_range: 0.02

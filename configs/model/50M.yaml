@@ -1,0 +1,13 @@
+# 50M parameter model configuration (prototype)
+vocab_size: 8000
+n_layers: 8
+d_model: 768
+n_heads: 12
+head_dim: 64
+ffn_mult: 4.0
+max_seq_len: 1024
+dropout: 0.1
+tie_embeddings: true
+rope_base: 10000.0
+n_kv_heads: 12  # MHA for prototype
+initializer_range: 0.02
